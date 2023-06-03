@@ -28,12 +28,7 @@
         android:contentDescription="@string/new_note"
         android:src="@drawable/baseline_add_white_24"
         app:backgroundTint="#9C27B0" />
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host_frag"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:navGraph="@navigation/nav_graph2"/>
+  
 
 
     <include
