@@ -1,0 +1,24 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/NoteListActivity"
+    tools:ignore="ExtraText">
+
+    <activity
+        android:id="@+id/NoteListActivity"
+        android:name="com.example.nokeeper4.NoteListActivity"
+        android:label="@string/notelist_label"
+        tools:layout="@layout/activity_note_list" />
+
+    <activity
+        android:id="@+id/MainActivity"
+        android:name="com.example.nokeeper4.MainActivity"
+        android:label="@string/main_label"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_main_to_note_list"
+            app:destination="@id/NoteListActivity" />
+    </activity>
+</navigation>
