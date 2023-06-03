@@ -18,6 +18,13 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/Theme.Nokeeper4.PopupOverlay" />
+        
+        <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_frag"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/nav_graph2"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
